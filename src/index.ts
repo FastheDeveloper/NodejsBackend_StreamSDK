@@ -2,7 +2,9 @@ import express from 'express';
 import { PrismaClient } from '@prisma/client';
 import { StreamChat } from 'stream-chat';
 
-const{STREAM_API_KEY = '',STREAM_API_SECRET}=process.env;
+// const{STREAM_API_KEY = '',STREAM_API_SECRET}=process.env;
+const STREAM_API_KEY='c3wrkh8sxfj5'
+const STREAM_API_SECRET='ns54fqn6u3kv22eczwb9zb6asddtgztzj43b3mzztuhuzhu2n7zcdr8bbh8jd6ab'
 const client=StreamChat.getInstance(STREAM_API_KEY,STREAM_API_SECRET);
 
 const prisma = new PrismaClient();
